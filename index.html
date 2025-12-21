@@ -4,109 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Самый вкусный Рево-кофе</h1>
+    <header class="header">
+        <div class="header__logo">Логотип</div>
+        <h1 class="header_title">Самый вкусный Рево-кофе</h1>
         <img src="assets/img/banner.png" alt="Баннер главной страницы">
-        <nav>
-            <ul>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link--active" href="#">Главная</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#1">Главная</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#2">Главная</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#3">Главная</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#4">Главная</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
+        <section class="cards" id="1">
+            <h2 class="card__title">Заголовок второго уровня</h2>
+            <div class="card card--featured">
+                <article class="card__part">
                     <img src="assets/icons/mag.png" alt="Иконка кофейный магазин">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Для современного мира начало повседневной работы по&nbsp;формированию позиции говорит о&nbsp;возможностях форм воздействия.</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Для современного мира начало повседневной работы по&nbsp;формированию позиции говорит о&nbsp;возможностях форм воздействия.</p>
                 </article>
-                <article>
+                <article class="card__part">
                     <img src="assets/icons/baens.png" alt="Иконка кофейное зерно">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Учитывая ключевые сценарии поведения, экономическая повестка сегодняшнего дня требует от&nbsp;нас анализа переосмысления внешнеэкономических политик.</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Учитывая ключевые сценарии поведения, экономическая повестка сегодняшнего дня требует от&nbsp;нас анализа переосмысления внешнеэкономических политик.</p>
                 </article>
-                <article>
+                <article class="card__part">
                     <img src="assets/icons/beans_pack.png" alt="Иконка кофейный мешок">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Разнообразный и&nbsp;богатый опыт говорит нам, что базовый вектор развития прекрасно подходит для реализации поэтапного и&nbsp;последовательного развития общества.</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Разнообразный и&nbsp;богатый опыт говорит нам, что базовый вектор развития прекрасно подходит для реализации поэтапного и&nbsp;последовательного развития общества.</p>
                 </article>
-                <article>
+                <article class="card__part">
                     <img src="assets/icons/mash.png" alt="Иконка кофейная машина">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>В&nbsp;своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение нашей деятельности создаёт предпосылки для модели развития.</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">В&nbsp;своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение нашей деятельности создаёт предпосылки для модели развития.</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
-            <div>
-                <article>
+        <section class="cards" id="2">
+            <h2 class="card__title">Заголовок второго уровня</h2>
+            <div class="card card--featured">
+                <article class="card__part2">
                     <img src="assets/img/IMAGE.png" alt="Желтый кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Желтый ароматный кофе.</p>
-                    <p>99.000</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Желтый ароматный кофе.</p>
+                    <p class="card__price">99.000</p>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
                 </article>
-                <article>
+                <article class="card__part2">
                     <img src="assets/img/coff_orange.png" alt="Оранжевый кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Оранжевый ароматный кофе.</p>
-                    <p>139.000</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Оранжевый ароматный кофе.</p>
+                    <p class="card__price">139.000</p>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
                 </article>
-                <article>
+                <article class="card__part2">
                     <img src="assets/img/w_coff_blue.png" alt="Синий кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Синий ароматный кофе.</p>
-                    <p>85.000</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Синий ароматный кофе.</p>
+                    <p class="card__price">85.000</p>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
                 </article>
-                <article>
+                <article class="card__part2">
                     <img src="assets/img/w_coff_brown.png" alt="Коричневый кофе">
-                    <h3>Заголовок уровня 3</h3>
-                    <p>Коричневый ароматный кофе.</p>
-                    <p>75.000</p>
+                    <h3 class="photo__title">Заголовок уровня 3</h3>
+                    <p class="card__text">Коричневый ароматный кофе.</p>
+                    <p class="card__price">75.000</p>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
+        <section class="cards" id="3">
+            <h2 class="card__title">Заголовок второго уровня</h2>
             <div>
-                <article>
+                <article class="card__part3">
                     <img src="assets/img/pr-0018-r.png" alt="Подарочный набор">
-                    <h3>Заголовок 3 уровня</h3>
-                    <p>А&nbsp;также активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть функционально разнесены на&nbsp;независимые элементы. Учитывая ключевые сценарии поведения, новая модель организационной деятельности выявляет срочную потребность системы обучения кадров, соответствующей насущным потребностям. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что существующая теория предоставляет широкие возможности для системы обучения кадров, соответствующей насущным потребностям.</p>
-                    <p>285.000</p>
+                    <h3 class="photo__title">Заголовок 3 уровня</h3>
+                    <p class="card__text">А&nbsp;также активно развивающиеся страны третьего мира набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть функционально разнесены на&nbsp;независимые элементы. Учитывая ключевые сценарии поведения, новая модель организационной деятельности выявляет срочную потребность системы обучения кадров, соответствующей насущным потребностям. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что существующая теория предоставляет широкие возможности для системы обучения кадров, соответствующей насущным потребностям.</p>
+                    <p class="card__price">285.000</p>
                     <img src="assets/icons/IC_coffee.png" alt="Кофейное зерно">
-                    <p>Кофейное зерно.</p>
+                    <p class="card__text">Кофейное зерно.</p>
                     <img src="assets/icons/IC_Mountain.png" alt="Горы">
-                    <p>Высота горы 700 - 800 м.</p>
+                    <p class="card__text">Высота горы 700 - 800 м.</p>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Заголовок второго уровня</h2>
+        <section class="cards" id="4">
+            <h2 class="card__title">Заголовок второго уровня</h2>
             <div>
-                <article>
+                <article class="card__part4">
                     <img src="assets/img/coff_brown.png" alt="Коричневое комбо">
-                    <h3>Комбо коричневого кофе.</h3>
-                    <p>Разнообразный и&nbsp;богатый опыт говорит нам, что повышение уровня гражданского сознания прекрасно подходит для реализации системы массового участия.</p>
+                    <p class="card__price">147.000</p>
+                    <h3 class="photo__title">Комбо коричневого кофе.</h3>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
+                    <p class="card__text">Разнообразный и&nbsp;богатый опыт говорит нам, что повышение уровня гражданского сознания прекрасно подходит для реализации системы массового участия.</p>
                     <img src="assets/img/image(7).png" alt="Голубое комбо">
-                    <h3>Комбо голубого кофе.</h3>
-                    <p>Картельные сговоры не&nbsp;допускают ситуации, при которой явные признаки победы институционализации лишь добавляют фракционных разногласий и&nbsp;указаны как претенденты на&nbsp;роль ключевых факторов.</p>
+                    <p class="card__price">156.000</p>
+                    <h3 class="photo__title">Комбо голубого кофе.</h3>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
+                    <p class="card__text">Картельные сговоры не&nbsp;допускают ситуации, при которой явные признаки победы институционализации лишь добавляют фракционных разногласий и&nbsp;указаны как претенденты на&nbsp;роль ключевых факторов.</p>
                     <img src="assets/img/image(8).png" alt="Красное комбо">
-                    <h3>Комбо красного кофе.</h3>
-                    <p>Как принято считать, непосредственные участники технического прогресса будут ограничены исключительно образом мышления.</p>
+                    <p class="card__price">275.000</p>
+                    <h3 class="photo__title">Комбо красного кофе.</h3>
+                    <button class="card__button" type="button">Купить</button>
+                    <button class="card__button2" type="button">Посмотреть</button>
+                    <p class="card__text">Как принято считать, непосредственные участники технического прогресса будут ограничены исключительно образом мышления.</p>
                 </article>
             </div>
         </section>
