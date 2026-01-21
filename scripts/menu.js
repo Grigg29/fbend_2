@@ -49,7 +49,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Кнопка "Наверх"
+// Кнопка "Наверх"ы
 const scrollTopButton = document.getElementById('scrollTop');
 
 // Показываем кнопку после скролла
