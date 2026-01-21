@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo"><img src="LOGO.png" alt=""></div>
-        <h1 class="header_title">Самый вкусный Рево-кофе</h1>
-        <img src="assets/img/banner.png" alt="Баннер главной страницы">
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link--active" href="#">Главная</a></li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#1">Главная</a></li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#2">Главная</a></li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#3">Главная</a></li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#4">Главная</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="LOGO.png" alt="Логотип" width="120" height="40">
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link active">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О проекте</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn btn--primary header__cta">Заказать</button>
+            </div>
+        </div>
     </header>
 
     <main>
+
+        <section class="banner">
+            <div class="header__logo"><img src="LOGO.png" alt=""></div>
+            <h1 class="header_title">Самый вкусный Рево-кофе</h1>
+            <img class="card__banner" src="assets/img/banner.png" alt="Баннер главной страницы">
+        </section>
+
         <section class="cards" id="1">
             <h2 class="card__title">Заголовок второго уровня</h2>
             <div class="card card--featured">
@@ -157,6 +184,10 @@
         <p>В&nbsp;своём стремлении улучшить пользовательский опыт мы&nbsp;упускаем, что представители современных социальных резервов заблокированы в&nbsp;рамках своих собственных рациональных ограничений. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики являются только методом политического участия и&nbsp;объединены в&nbsp;целые кластеры себе подобных. В&nbsp;своём стремлении повысить качество жизни, они забывают, что базовый вектор развития создаёт предпосылки для переосмысления внешнеэкономических политик.</p>
     </footer>
 
+    <script src="scripts/menu.js"></script>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
 </body>
 
 </html>
